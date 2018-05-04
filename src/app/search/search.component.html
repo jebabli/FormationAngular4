@@ -1,0 +1,46 @@
+<main id="main">
+        <div class="container">
+           <div class="row">
+              <!-- Search -->
+              <div class="col-xs-12 col-sm-9">
+                 <div class="content" id="content_search">
+                    <h1 class="page-title">Tout les héros</h1>
+                    <div class="row">
+                       <div class="col-xs-12">
+                          <div class="panel">
+                             <div class="row imgback">
+                                <div class="hidden-xs col-sm-3"></div>
+                                <div class="col-xs-12 col-sm-9 fp">
+                                   <div class="filters">
+                                      <!-- Formulaire -->
+                                      <form action="#" novalidate>
+                                         <div class="filter">
+                                            <p><label for="">Nom du héro</label></p>
+                                            <p><input type="text" name="Nom" [(ngModel)] = 'filter.Nom' placeholder="ex: Reaper"></p>
+                                         </div>
+                                      </form>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="col-xs-12">
+                          <div class="result">
+                             <div class="heroes row " >
+                                <div class="col-xs-6 col-sm-3 hero" *ngFor = "let hero of Heros | herofilter:filter | slice:0:8; let i=index">
+                                   <a [routerLink]="['/hero-details',hero.Id]">
+                                      <img src="./assets/images/{{hero.Photo}}" alt="{{hero.Nom}}" height="175" width="150">
+                                      <div class="bot">
+                                         <p class="name">{{hero.Nom}}</p>
+                                      </div>
+                                   </a>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </main>
