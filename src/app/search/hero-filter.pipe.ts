@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { Hero } from '../home/hero';
+import { Hero } from '../hero/hero';
 
 @Pipe({
     name: 'herofilter',

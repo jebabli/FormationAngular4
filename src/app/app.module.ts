@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AddHeroComponent } from './add-hero/add-hero.component';
 import { SearchComponent } from './search/search.component';
-import { GetAllHerosService } from './Service/get-all-heros.service';
+import { GetAllHerosService } from './service/heroes.service';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { HeroFilterPipe } from './search/hero-filter.pipe';
  

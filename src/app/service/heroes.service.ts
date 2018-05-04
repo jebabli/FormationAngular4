@@ -1,5 +1,5 @@
 
-import { Hero } from '../home/hero'; 
+import { Hero } from '../hero/hero'; 
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 

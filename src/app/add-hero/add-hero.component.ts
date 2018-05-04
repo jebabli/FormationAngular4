@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GetAllHerosService } from '../Service/get-all-heros.service';
+import { GetAllHerosService } from '../service/heroes.service';
 
 @Component({
   selector: 'app-add-hero',

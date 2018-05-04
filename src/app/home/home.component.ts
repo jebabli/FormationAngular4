@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'; 
 import { Injectable } from '@angular/core';
-import { GetAllHerosService } from '../Service/get-all-heros.service';
-import { Hero } from '../home/hero';
+import { GetAllHerosService } from '../service/heroes.service';
+import { Hero } from '../hero/hero';
  
 
 @Component({

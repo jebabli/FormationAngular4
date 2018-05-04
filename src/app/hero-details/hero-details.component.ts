@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {HomeComponent} from '../home/home.component';
-import { GetAllHerosService } from '../Service/get-all-heros.service';
-import { Hero } from '../home/hero';
+import { GetAllHerosService } from '../service/heroes.service';
+import { Hero } from '../hero/hero';
 
 @Component({
   selector: 'app-hero-details',
