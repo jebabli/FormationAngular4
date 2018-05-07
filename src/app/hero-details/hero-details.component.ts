@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {HomeComponent} from '../home/home.component';
-import { GetAllHerosService } from '../service/heroes.service';
+import { HeroesService } from '../service/heroes.service';
 import { Hero } from '../hero/hero';
 
 @Component({
@@ -14,11 +14,11 @@ export class HeroDetailsComponent implements OnInit,OnDestroy  {
   
   id: number;
   private sub: any;
-  private _heroesServices : GetAllHerosService;
+  private _heroesServices : HeroesService;
      
   private herodetail : any[];
 
-  constructor(private route: ActivatedRoute,private Myservice: GetAllHerosService) {
+  constructor(private route: ActivatedRoute,private Myservice: HeroesService) {
     this._heroesServices = Myservice;  
   }
 

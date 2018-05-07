@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 
 
 @Injectable()
-export class GetAllHerosService {  
+export class HeroesService {  
 
 constructor(private http: Http) { }
  
@@ -25,15 +25,13 @@ getHeroes() : any {
    return response.json();
  }).catch((err) => {
  console.log(err);
-});
- 
-}
-  
+}); 
+}  
 
-getAllHeroes() : Observable <Hero[]> {
-  return this.http.get("./assets/data/Heros.json")
-    .map((res : Response) => res.json())
-    .catch((error : any) => Observable.throw('Server error'));
-}
+// getAllHeroes() : Observable <Hero[]> {
+//   return this.http.get("./assets/data/Heros.json")
+//     .map((res : Response) => res.json())
+//     .catch((error : any) => Observable.throw('Server error'));
+// }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GetAllHerosService } from '../service/heroes.service';
+import { HeroesService } from '../service/heroes.service';
 
 @Component({
   selector: 'app-add-hero',
@@ -8,8 +8,8 @@ import { GetAllHerosService } from '../service/heroes.service';
 })
 export class AddHeroComponent implements OnInit {
 
-  private _heroesServices : GetAllHerosService; 
-  constructor(private Myservice: GetAllHerosService) {
+  private _heroesServices : HeroesService; 
+  constructor(private Myservice: HeroesService) {
 
 this._heroesServices = Myservice;
    }

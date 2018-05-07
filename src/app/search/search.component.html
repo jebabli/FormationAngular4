@@ -27,7 +27,7 @@
                        <div class="col-xs-12">
                           <div class="result">
                              <div class="heroes row " >
-                                <div class="col-xs-6 col-sm-3 hero" *ngFor = "let hero of Heros | herofilter:filter | slice:0:8; let i=index">
+                                <div class="col-xs-6 col-sm-3 hero" *ngFor = "let hero of _Heros | herofilter:filter | slice:0:8; let i=index">
                                    <a [routerLink]="['/hero-details',hero.Id]">
                                       <img src="./assets/images/{{hero.Photo}}" alt="{{hero.Nom}}" height="175" width="150">
                                       <div class="bot">
