@@ -7,8 +7,7 @@ import { Hero } from '../hero/hero';
 })
  
 export class HeroFilterPipe implements PipeTransform {   
-  transform(items: Hero[], filter: Hero): Hero[] {    
-    
+  transform(items: Hero[], filter: Hero): Hero[] {       
     if (!items || !filter ) {
           return items
   }            

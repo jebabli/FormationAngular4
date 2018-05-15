@@ -18,19 +18,19 @@ export class HomeComponent implements OnInit {
    
  private _heroesServices : HeroesService;
  private _Heros : Hero[];
- NumberOfHeros ;
+ private NumberOfHeros :number ;
 
     constructor(private Myservice: HeroesService ) { 
       this._heroesServices = Myservice;
      }
    
     ngOnInit() {     
-      this._heroesServices.getHeroes().then(data => {
+      this._heroesServices.getHeroes().subscribe(data => {
         this._Heros = data;
         this.NumberOfHeros = data.length;
     }); 
     }  
   }
 
-
+   
  

@@ -18,9 +18,8 @@ export class SearchComponent implements OnInit {
    }
  
   ngOnInit() {     
-    this._heroesServices.getHeroes().then(data => {
+    this._heroesServices.getHeroes().subscribe(data => {
     this._Heros = data;       
   }); 
   }  
-
 }

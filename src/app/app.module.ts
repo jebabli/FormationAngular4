@@ -10,9 +10,7 @@ import { AddHeroComponent } from './add-hero/add-hero.component';
 import { SearchComponent } from './search/search.component';
 import { HeroesService } from './service/heroes.service';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
-import { HeroFilterPipe } from './search/hero-filter.pipe';
- 
- 
+import { HeroFilterPipe } from './search/hero-filter.pipe'; 
 
 
 @NgModule({
@@ -23,8 +21,6 @@ import { HeroFilterPipe } from './search/hero-filter.pipe';
     SearchComponent,
     HeroDetailsComponent,
     HeroFilterPipe 
-     
-     
   ],
   imports: [
     BrowserModule,
